@@ -174,3 +174,12 @@ a {
 a:hover, a:focus, a:active {
   color: #6B1414;
 }
+
+
+img.foto-arya {
+  width: 150px;
+  border: solid 5px #6B1414;
+  border-radius: 50%;
+  margin-top: auto;
+  margin-left: auto;
+}
