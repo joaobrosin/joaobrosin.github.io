@@ -183,3 +183,31 @@ img.foto-arya {
   margin-top: auto;
   margin-left: auto;
 }
+#box-habilidades {
+  display: grid;
+}
+
+#box-coracao {
+  display: grid;
+  position: relative;
+  left: 100px;
+  top: -362px;
+  width: 200px;
+}
+
+.YTlink {
+  
+color: #868e96;
+font-weight: bold;
+  
+}
+.YTlink:hover {
+  text-decoration: none;
+  color: #6B1414
+  
+}
+
+.habilidades-geral {
+  
+  height: 400px;
+}
