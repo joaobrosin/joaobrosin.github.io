@@ -222,6 +222,8 @@ img.foto-perfil {
 }
 
 #metodologia {
-  margin: auto;
-  width: auto;
+  margin-left: auto;
+  margin-left: auto;
+  max-width: 100%;
+  height: auto;
 }
