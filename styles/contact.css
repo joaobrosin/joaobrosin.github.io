@@ -1,0 +1,90 @@
+:root {
+    --background-color: #333646;
+    --yellow-color: #f1bd35;
+    --white-color: #EBEBEC;
+}
+
+body::after {
+    content: "";
+    background-color: black;
+    opacity: 15%;
+    width: 600px;
+    height: 600px;
+    border-top-left-radius: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.contact-box {
+    width: 600px;
+    height: 280px;
+    margin: auto;
+    margin-top: 20vh;
+    display: flex;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-list a {
+    text-decoration: none;
+    color: var(--white-color);
+    position: relative;
+    margin-right: 70px;
+}
+
+.contact-list a::after {
+    content: "";
+    background-color: var(--yellow-color);
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+}
+
+.contact-list a:hover::after {
+    width: 100%;
+    transition: width 400ms cubic-bezier(0.18, 0.89, 0.32, 1.4);
+}
+
+.icons {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 430px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.underline {
+    margin: 50px auto;
+    width: 50%;
+    height: 5px;
+    background-color: var(--yellow-color);
+}
+
+
+/* == background animation == */ 
+
+body::after {
+    background-color: rgba(0, 0, 0, 0);
+    animation-name: bg;
+    animation-duration: 700ms;
+    animation-delay: 200ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bg {
+    to {
+    background-color: rgba(0, 0, 0, 1);
+        
+    }
+}

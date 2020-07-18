@@ -1,0 +1,130 @@
+:root {
+    --background-color: #333646;
+    --yellow-color: #f1bd35;
+    --white-color: #EBEBEC;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.portfolio {
+    max-width: 1000px;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.card {
+    width: 380px;
+    height: 178px;
+    margin: 25px 30px;
+    border: solid 10px transparent;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 600ms;
+    display: flex;
+    align-items: flex-end;
+    border: solid 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.06);   
+}
+
+/* ==== HOVER INTERACTION IN EACH CARD ==== */
+
+/* == CARD 1 == */
+
+.card:nth-child(1) {
+    background: url('../assets/ecoleta-layout.png') no-repeat;
+    background-size: 100%;
+}
+
+.card:nth-child(1) span {
+    background-color: var(--background-color);
+    color: var(--white-color);
+    border: solid 2px var(--yellow-color);
+    padding: 10px;
+    margin: 10px;
+    opacity: 0;
+    transition: 600ms;
+}
+
+.card:hover > :nth-child(1) {
+    opacity: 1;
+}
+
+/* == CARD 2 == */
+
+.card:nth-child(2) {
+    background: url('../assets/foodfy-layout.png') no-repeat;
+    background-size: 100%;
+}
+
+.card:nth-child(2) span {
+    background-color: var(--background-color);
+    color: var(--white-color);
+    border: solid 2px var(--yellow-color);
+    padding: 10px;
+    margin: 10px;
+
+    opacity: 0;
+    transition: 600ms;
+}
+
+.card:hover > :nth-child(2) {
+    opacity: 1;
+}
+
+
+/* == CARD 3 == */
+
+.card:nth-child(3) {
+    background: url('../assets/rentbooks-layout.png') no-repeat;
+    background-size: 100%;
+}
+
+.card:nth-child(3) span {
+    background-color: var(--background-color);
+    color: var(--white-color);
+    border: solid 2px var(--yellow-color);
+    padding: 10px;
+    margin: 10px;
+    opacity: 0;
+    transition: 600ms;
+}
+
+.card:hover > :nth-child(3) {
+    opacity: 1;
+}
+
+
+
+
+/* == CARD 4 == */
+
+
+.card:nth-child(4) {
+    background: url('../assets/yummy-layout.png') no-repeat;
+    background-size: 100%;
+}
+
+.card:nth-child(4) span {
+    background-color: var(--background-color);
+    color: var(--white-color);
+    border: solid 2px var(--yellow-color);
+    padding: 10px;
+    margin: 10px;
+    opacity: 0;
+    transition: 600ms;
+}
+
+.card:hover > :nth-child(4) {
+    opacity: 1;
+}
