@@ -7,7 +7,7 @@
 # Table of Contents
 - [About](#-about)
 - [Technologies](#-technologies)
-- [Porfolio Address](#-portfolio-addres)
+- [Porfolio Address](#-portfolio-address)
 <!-- - [Installation](#-installation) -->
 
 ---
