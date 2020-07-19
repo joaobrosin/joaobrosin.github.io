@@ -1,11 +1,11 @@
-const phoneButton = document.querySelector('.phone-btn')
+const instagramButton = document.querySelector('.instagram-btn')
 const emailButton = document.querySelector('.email-btn')
 const githubButton = document.querySelector('.github-btn')
 const linkedinButton = document.querySelector('.linkedin-btn')
 const iconImage = document.querySelector('.icons img')
 
-phoneButton.addEventListener('mouseover', function() {
-    iconImage.src = 'assets/phone-icon.svg'
+instagramButton.addEventListener('mouseover', function() {
+    iconImage.src = 'assets/instagram-icon.svg'
 })
 
 emailButton.addEventListener('mouseover', function() {
