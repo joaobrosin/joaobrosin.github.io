@@ -6,7 +6,7 @@ const aboutMe = document.querySelector('.about-me')
 const tools = document.querySelector('.tools')
 const goals = document.querySelector('.goals')
 
-
+ 
 card1.addEventListener('click', function(){
     aboutMe.style.display = 'block'
     tools.style.display = 'none'
