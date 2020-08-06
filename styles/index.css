@@ -20,12 +20,13 @@ body::after {
 section.content {
     display: flex;
     margin-left: 80px;
-    /* background-color: rgb(26, 26, 68); */
+    /* background-color: royalblue; */
 }
 
 .intro {
-    /* background-color: rgb(116, 116, 38); */
-    margin-top: 100px;  
+    /* background-color: tomato; */
+    margin: auto 5% auto auto;
+
 }
 
 span {
@@ -33,13 +34,14 @@ span {
 }
 
 .image {
-    margin: auto 200px auto auto;
-    /* background: rgb(88, 25, 25); */
+    margin: auto 10% auto auto;
+    /* background: turquoise; */
+    width: 380px;
 }
 
 .image img {
     border-radius: 100%;
-    width: 380px;
+    width: 100%;
 }
 
 h1 {
@@ -72,5 +74,63 @@ body::after {
     to {
     background-color: rgba(0, 0, 0, 1);
         
+    }
+}
+
+
+/* === responsivity === */
+
+
+
+@media (max-width: 1000px) {
+    section.content {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .image {
+        margin: 0 0 20px 0;
+        width: 300px;
+    }
+
+    .intro {
+        margin: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 670px) {
+    body::after {
+        display: none;
+    }
+
+    .image {
+        width: 240px;
+        align-self: center;
+    }
+
+    .intro {
+        margin: auto 5%;
+    }
+
+
+}
+
+@media (max-width: 370px) {
+    h1 {
+        font-size: 54px;
+        width: 100%;
+        
+    }
+    
+    h3 {
+        font-size: 22px;
+    }
+    
+    p {
+        font-size: 16px;
     }
 }

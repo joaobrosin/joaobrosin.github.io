@@ -17,12 +17,17 @@ body::after {
     z-index: -1;
 }
 
+.content {
+    display: flex;
+    justify-content: center;
+}
+
 .contact-box {
     width: 600px;
     height: 280px;
     margin: auto;
-    margin-top: 20vh;
     display: flex;
+    /* background-color: turquoise; */
 }
 
 .contact-list {
@@ -86,5 +91,41 @@ body::after {
     to {
     background-color: rgba(0, 0, 0, 1);
         
+    }
+}
+
+
+/* === responsivity === */
+
+@media (max-width: 670px) {
+    body::after {
+        display: none;
+    }
+
+    .contact-box {
+        width: 90%;
+        height: auto;
+        flex-direction: column-reverse;
+    }
+
+    .contact-list {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .contact-list a {
+        margin: 35px 20px;
+    }
+
+    .icons {
+        width: 100%;
+    }
+    
+
+}
+
+@media (max-width: 370px) {
+    .contact-box{
+        font-size: 12px;
     }
 }

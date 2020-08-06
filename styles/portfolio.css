@@ -128,3 +128,23 @@
 .card:hover > :nth-child(4) {
     opacity: 1;
 }
+
+
+/* === responsivity === */
+
+@media (max-width: 920px) {
+    .card {
+        width: 280px;
+        height: 130px;
+    }
+}
+
+@media (max-width: 750px) {
+    .portfolio {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        margin: 25px 0px;
+    }
+}
